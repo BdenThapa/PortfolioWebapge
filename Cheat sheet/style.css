@@ -1,0 +1,255 @@
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 15%;
+  }
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  header li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 80px;  
+  }
+  
+  header li:hover {
+    color: #DBE9EE;
+  }
+  .question li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 80px;  
+  }
+  
+  .question li:hover {
+    color: #DBE9EE;
+  }
+  
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+  
+  h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  h4 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+    height: 100px;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
+  
+  .question {
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  header li{
+    border: 2px solid #000000;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 20%;
+    background-color: #C0D6DF;
+    color: #C0D6DF;
+
+  }
+  header li:hover {
+    border-radius: 15%;
+    background: #C0D6DF;
+    color: #FFF;
+    border: 2px solid #000000;
+  }
+  header li:active{
+    border: 5px solid #000000 ;
+  }
+  .question h4 {
+    border: 2px solid #000000;
+    margin: 25px;
+    display: inline-block;
+    border-radius: 10%;
+    background-color: #C0D6DF;
+    width: 110px;
+    text-align: center;
+    box-shadow:0px 4px;
+  }
+  
+  .question h4:hover {
+    border: 2px solid #000000;
+    margin: 25px;
+    display: inline-block;
+    border-radius: 10%;
+    background-color: #C0D6DF;
+    width: 110px;
+    text-align: center;
+    box-shadow:0px 4px;
+  }
+  .question h4:active{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    box-shadow:0px 0px;
+  }
+
+  th {
+    border: 2px solid #466995;
+    background-color: #466995;
+  }
+  
+  table {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  td {
+    border: 2px solid #466995;
+    width: 300px;
+  }
+  .question a{
+    color: #0b3466;
+  }
+  .question a:hover{
+    background: #C0D6DF;
+    color: #FFF;
+  }
+
+  header a{
+    color: #0b3466;
+  }
+  header a:hover{
+    background: #C0D6DF;
+    color: #FFF;
+  }
+
+  .box1{
+    background-color:red;
+    color: #C0D6DF;
+    text-align: center;
+    height: 140px;
+    width: 140px;
+    border: 2px solid black;
+    position: absolute;
+    left:300px;
+    top: 600px;
+  }
+  .box2{
+    background-color:rgb(238, 130, 238);
+    color: #C0D6DF;
+    text-align: center;
+    height: 145px;
+    width: 145px;
+    border: 2px solid black;
+    position: absolute;
+    left:500px;
+    top: 600px;
+  }
+  .box3{
+    background-color:#ffa500;
+    color: #C0D6DF;
+    text-align: center;
+    height: 145px;
+    width: 145px;
+    border: 2px solid black;
+    position: absolute;
+    left:700px;
+    top: 600px;
+  }
+  .box4{
+    background-color:rgba(238, 130, 238, 50);
+    color: #C0D6DF;
+    text-align: center;
+    height: 145px;
+    width: 145px;
+    border: 2px solid black;
+    position: absolute;
+    left:900px;
+    top: 600px;
+  }
+  .box5{
+    background-color:hsl(248, 53%, 58%);
+    color: #C0D6DF;
+    text-align: center;
+    height: 145px;
+    width: 145px;
+    border: 2px solid black;
+    position: absolute;
+    left:1100px;
+    top: 600px;
+  }
+td{
+  background-color: #DBE9EE;
+}
+.empty{
+    background-color: #9db9c5;
+  }
+
+a{
+  text-decoration: none;
+}
+
+thead{
+  text-decoration: underline;
+}
+.theaders{
+  text-decoration: underline;
+}
