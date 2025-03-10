@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    function validateForm() {
+      let name = document.forms["contactForm"]["name"].value;
+      let email = document.forms["contactForm"]["email"].value;
+      let message = document.forms["contactForm"]["message"].value;
+      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+      if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+        alert("All fields must be filled out");
+        return false;
+      }
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="mainbody">
+    <div class="content">
+      <h4 class="header"><strong>Contacts.</strong></h4>
+      <h2 class="bluetext">How to get a hold of me:</h2>
+      
+      <div class="contactInformation">
+        <h3>Email:</h3>
+        <p><a href="mailto:Bidenthapa@hotmail.com">Bidenthapa@hotmail.com</a></p>
+        
+        <h3>Phone:</h3>
+        <p><a href="tel:+447877654452">+44 07877654452</a></p>
+        
+        <h3>Where I am located:</h3>
+        <p>Swindon</p>
+        
+        <h3>LinkedIn:</h3>
+        <p><!-- Add LinkedIn link here --></p>
+        
+        <h3>My GitHub:</h3>
+        <img src="GITHUB.png" alt="GitHub">
+      </div>
+      
+      <h3>Contact Me</h3>
+      <form name="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        
+        <input type="submit" value="Send">
+      </form>
+      
+      <nav>
+        <ul>
+          <li><a href="Portfolio.html">Home</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="projects.html">Other Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>
