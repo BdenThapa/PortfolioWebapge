@@ -4,13 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-
-  <!-- Include React and ReactDOM from CDN -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
   <script>
-    // JavaScript function for basic validation (this can be replaced with React logic later if needed)
     function validateForm() {
       let name = document.forms["contactForm"]["name"].value;
       let email = document.forms["contactForm"]["email"].value;
@@ -51,11 +45,21 @@
         <h3>My GitHub:</h3>
         <img src="GITHUB.png" alt="GitHub">
       </div>
-
-      <!-- React Contact Form Will Be Rendered Here -->
+      
       <h3>Contact Me</h3>
-      <div id="contact-app"></div> <!-- React component will mount here -->
-
+      <form name="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        
+        <input type="submit" value="Send">
+      </form>
+      
       <nav>
         <ul>
           <li><a href="Portfolio.html">Home</a></li>
@@ -65,9 +69,5 @@
       </nav>
     </div>
   </div>
-
-  <!-- Add React Component Script -->
-  <script src="Contact.js"></script> <!-- This is your Contact.js React file -->
 </body>
 </html>
-
